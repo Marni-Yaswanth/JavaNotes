@@ -80,7 +80,8 @@ inheritance - extends keyword
 single,multilevel,heirarchial,hybrid
 
 super and this
-this is used to refer to the current object and super is used to the parent class
+this is used to refer to the current object and super is used to the parent class 
+we can call var,method,constructor using these keywords.
 
 
 method overloading - having same method name with different number of parameters or with different data types
