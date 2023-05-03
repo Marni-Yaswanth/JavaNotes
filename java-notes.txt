@@ -1,0 +1,87 @@
+java
+it is a simple language provides security and robust(strong) high performance language
+we need jdk in that jre will be there in that jvm will be there 
+our .java code is converted to .class code using compiler which is platform independent and that .class code is converted into machine .byte code using jvm which is platform dependent.
+
+
+variables 
+local 
+static - memory allocation happens when the class is loaded in the memory
+
+data types 
+primitive - which are predefined 
+int4 byte1 short2 char1 long8 double8 float4 boolean1
+non primitive - user defined
+class string arrays
+
+enum - is a special data type which is used to define our own variables
+eg: 
+
+enum Days{
+Monday , Tuesday , Wednesday}
+
+public class Demo
+{
+Days d = Days.Monday;
+sysout(d); // prints monday
+switch (Days)
+{
+case Monday:
+{
+sysout("its monday");
+break;
+}
+}
+}
+
+
+opeartors
+
+unary - pre,post ++,--
+binary - assignment,arithmatic,logical,bitwise,ternary,relational
+
+Static - dont need to create an object for it, can directly call with its class name
+Main - this is where execution of the code starts from
+
+naming convention - camel case
+class - noun,UpperCase
+Interface - Adjective,Uppercase
+Method - verb,lowerUpper
+variable - noun,lowerUpper
+package - lower
+constant- upper_upper
+
+method - has a body with some logic to do and it is written for something to avoid repetition of code.
+
+return type - it is a return type that what out method gonna return , if it is null then mention return type as void.
+
+class - blueprint for a object 
+object - entity of a class which has parameters and functionality to do
+
+access specifiers-
+public - can be accessed from anywhere
+private - only with in that class
+protected - only with in that package and subchild if it is in different package
+default - only in that package
+
+constructor - used to initialise the object
+2 types - no arg, parameterized constructor
+There are two rules defined for the constructor.
+Constructor name must be the same as its class name
+A Constructor must have no explicit return type
+A Java constructor cannot be abstract, static, final, and synchronized
+
+static variable - also called as class variable
+static method - class method
+this keyword - used to distinguish between local variables(method variables decalred inside a method as parameters) and instance variables (declared inside a class) and also refers to the current object.
+
+
+inheritance - extends keyword
+single,multilevel,heirarchial,hybrid
+
+super and this
+this is used to refer to the current object and super is used to the parent class
+
+
+method overloading - having same method name with different number of parameters or with different data types
+method overriding - this is done when inheritance is happening when a child extends its parents method and the child also had the same method then it is overriding that method. we cannot override static method and main also as it is static in nature.
