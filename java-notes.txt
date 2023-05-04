@@ -86,3 +86,31 @@ we can call var,method,constructor using these keywords.
 
 method overloading - having same method name with different number of parameters or with different data types
 method overriding - this is done when inheritance is happening when a child extends its parents method and the child also had the same method then it is overriding that method. we cannot override static method and main also as it is static in nature.
+
+
+
+//abstraction - hiding details and showing the necessary details.
+abstract method - a method which has no body 
+abstract class - a class which contains abstract methods it is not necessary that an abstract class contains only abstract methods...it can also have non abstract methods, we cannot create object for abstract class but we can make a reference of a abstract class
+if any class is extending an abstract class then it should implemt all the abstract methods present in the abstract class
+it can have constructors
+Abstract class can have final, non-final, static and non-static variables.
+abstract class can have static and final methods also.
+
+interface - used for abstraction
+used for multiple inheritance
+used for loose coupling - it is a phenomenon that there is a relation between components of the application but there should not be like anything like...if we make changes in one thing we also need to make changes  in the other file also.
+in interfaces we have all abstract methods before java 8 
+in interface for methods compiler will automatically attach public keyword for abstract methods or compiler will automatically public abstract
+in interface fields are by default made public static final by compiler.
+Interface has only static and final variables.
+
+
+changes in interfaces after 8th version of java
+we can write default methods in interface
+static methods
+
+changes made in interfaces after 9th version of java
+we can werite private methods in interfaces.
+
+
