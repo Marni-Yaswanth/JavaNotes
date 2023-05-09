@@ -113,4 +113,15 @@ static methods
 changes made in interfaces after 9th version of java
 we can werite private methods in interfaces.
 
+--------package---------
+with the keyword package we can create a package
+if we use package com.* all the classes and interfaces are available in that but we need to import the classes and interfaces which we wanted from the other package
 
+Access Modifier	within class	within package	outside package by subclass only	outside package
+Private			Y			N				N					N
+Default			Y			Y				N					N
+Protected			Y			Y				Y					N
+Public			Y			Y				Y					Y
+
+-------------------Encapsulation---------------------
+wrapping of data in a single class taking all data variables as private and having getters and setters for that.
