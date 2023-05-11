@@ -4,7 +4,9 @@ we need jdk in that jre will be there in that jvm will be there
 our .java code is converted to .class code using compiler which is platform independent and that .class code is converted into machine .byte code using jvm which is platform dependent.
 
 
-variables 
+variables
+ 
+instance
 local 
 static - memory allocation happens when the class is loaded in the memory
 
@@ -125,3 +127,74 @@ Public			Y			Y				Y					Y
 
 -------------------Encapsulation---------------------
 wrapping of data in a single class taking all data variables as private and having getters and setters for that.
+
+-------------------------------arrays---------------------------------------------------------------------------------------------------
+
+stores same type of data in contiguous memory
+fixed size
+can be accessed useing index starts at 0
+length
+two dimensional array = arr[][];
+jagged array ------array with fixed and non fixed columns
+arr[3][]
+for each loop in array
+
+-----------------------------------------------------------math------------------------------
+
+Math.(sin,cos,ceil,floor,toRadians,toDegrees,sinh,cosh,tanh,sina,cosa,tana,sinah,cosah,tanah,log,log10,random)
+
+-------------------------------------Wrapper Class-----------------------------------------------------------------------
+
+Integer 
+Autoboxing- converting int to Integer
+int i =9;
+
+Interger k = Integer.valueOf(i) //explicitly converting it into Integer
+Integer j = i; //compiler converts it automatical;y
+
+Unboxing - converting wrapper class values to primitive type
+
+Integer i =9;
+int j=i; //compiler automatically does
+Integer k = i.intValue();
+
+
+-------------------------------------------------Method overloading vs Method Overridng--------------------------------
+overloading takes place in same class , overriding takes place in different class
+
+overloading needs different number of arguments and or=verriding needs same number of arguments
+
+
+---------------------------------------------------------Java String----------------------------------------------------
+string is an immutable object in java which implements seriazable,charSequence,Comparable interfaces.
+we cannot change string values
+and string values are stored in string constant pool where one object is created first and if we try to create another string object with the same name using literal , it first searches in the string constant pool and as the literal is already presents so, it point the variable to that literal rahter than creating new object
+
+comparision - equals,==,compareTo()-compareTo() method compares strings lexographically. gives 1,-1,0
+concatenation - +,.concat()
+
+toUpperCase(),toLowerCase(),equals(),equalsIgnoreCase(),charAt(),valueOf(),contains(),length(),compareTo(),toCharArray(),subString(),startsWith(),endsWith().........................
+
+
+
+-------------------------------------------String buffer-----------------------------------
+string buffer is same as string but we can change string buffer and it is synchronized 
+
+append()
+insert()
+delete()
+replace()
+.......
+
+
+-----------------------------------toString()--------------------------
+if we wanted to represent any object as a string then we need to override the toString method of the object class
+
+like
+
+@Override
+public String toString()
+{
+return name+" "+rollno;
+}
+-----------------------------------------------------
